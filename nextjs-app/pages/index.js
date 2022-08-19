@@ -7,14 +7,14 @@ function Card(props) {
   return (
     <>
       <div className="card col col-4 d-flex justify-content-center">
-        <Image src={props.src} className="card-img-top" alt="..." />
+        <Image src={props.src} className="card-img-top" alt="..." width="100%"  height="175%"/>
         <div className="card-body">
           <h5 className="card-title">{props.title}</h5>
           <Link href={{pathname: "pokemons/[name]", query: {name: props.title}}}>
             <a><strong>Press to go to Pokemon info!</strong></a>
           </Link>
           <p className="card-text">Likes: {likes}</p>
-          <a href="#!" onClick={() => { setlikes(likes + 1) }} className="btn btn-primary">{props.buttonText}</a>
+          <button href="#!" onClick={() => { setlikes(likes + 1) }} className="btn btn-primary">{props.buttonText}</button>
         </div>
       </div>
     </>

@@ -7,7 +7,7 @@ function Card(props) {
   return (
     <>
       <div className="card col col-4 d-flex justify-content-center">
-        <Image src={props.src} className="card-img-top" alt="..." />
+      <Image src={props.src} className="card-img-top" alt="..." width="100%"  height="175%"/>
         <div className="card-body">
           <h5 className="card-title">{props.title}</h5>
         </div>
